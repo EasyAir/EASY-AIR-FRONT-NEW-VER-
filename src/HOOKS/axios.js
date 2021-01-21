@@ -1,22 +1,15 @@
-import axios from 'axios'
+import axios from "axios";
+import { useState } from "react";
 
-function Axios(method, url, headers, data) {
-    axios({
-        method: method,
-        url: 'http://easyair.herokuapp.com/' + url,
-        headers:{
-            "Authorization": "Bearer " + window.localStorage.getItem("token"),
-            headers
-        },
-        data:{
-            data
-        }
-    }).then((e)=>{
-        console.log(e)
-        return e;
-    }).catch((err)=>{
-        console.log(err)
-    })
-}
-
-export default Axios;
+const DOMAIN = "http://easyair.herokuapp.com/";
+export const Request = (method, url, data,m) => {
+  return axios({
+    method:method,
+    url: DOMAIN + url,
+    headers: {"Authorization": "Bearer " + window.localStorage.getItem("token")
+  },
+    data: data
+  })
+    .then(res=>res.data)
+    .catch((err) => console.log(err));
+};
