@@ -15,6 +15,14 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>Kakao.init("97539593073279dc0a725dbcbdda891c");</script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,7 +36,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" style="width: 100%; height: 100vh; min-width: 1000px; min-height: 800px;"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
