@@ -1,13 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import GlobalStyle from './PUBLIC/globalStyle'
+import Login from './COMPONENTS/LOGIN/login'
+import Header from './COMPONENTS/HEADER/header'
+import Overview from './COMPONENTS/OVERVIEW/overview'
+import {BrowserRouter,Route} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-        <GlobalStyle/>
-        <a>dsf</a>
-    </>
+    <BrowserRouter>
+    <GlobalStyle/>
+    <Route exact path="/"><Login></Login></Route>
+    <Route exact path="/overview">
+        <Header></Header>
+        <Overview></Overview>
+    </Route>
+{/*         <Login></Login> */}
+    </BrowserRouter>
   );
 }
 
