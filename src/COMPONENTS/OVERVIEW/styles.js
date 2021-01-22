@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {color} from '../../PUBLIC/index'
+import {color, blue} from '../../PUBLIC/index'
 
 export const Line = styled.div`
 width:100%;
@@ -59,15 +59,20 @@ border:1px solid gray;
 `
 
 export const ShowBox = styled.div`
+padding: 0 3% 0 0;
 width:60%;
 height:100%;
 overflow-y:scroll;
 margin-left:70px;
 padding-top:2%;
 overflow-x:hidden;
-::-webkit-scrollbar{
-    display:none;
-}
+     ::-webkit-scrollbar{
+        width:10px;
+        background-color:rgb(240,240,240);
+    } 
+    ::-webkit-scrollbar-thumb{
+        background-color:skyblue;
+    }
 `
 
 export const DetailBar = styled.div`
@@ -100,7 +105,7 @@ box-shadow:2px 3px 3px rgb(100,100,100,0.1);
 `
 
 export const BoxTitle = styled.div`
-color:#006CE6;
+color:${blue};
 font-weight:bold;
 margin-top:40px;
 margin-left:30px;
@@ -164,7 +169,7 @@ margin-top:25px;
 a{
     font-size:13px;
     :first-child{
-        color:#006CE6;
+        color:${blue};
         font-size:16px;
         font-weight:bold;
     }
@@ -174,5 +179,40 @@ ul{
     display:flex;
     justify-content:space-between;
     font-size:14px;
+}
+`
+
+export const MemberBox = styled.div`
+width:97%;
+height:11%;
+border:1px solid rgb(140,140,140);
+margin-top:30px;
+border-left:7px solid ${blue};
+display:flex;
+margin-left:1%;
+align-items:center;
+box-shadow:2px 3px 3px rgb(100,100,100,0.1);
+img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+    border-radius:80%;
+    box-shadow:3px 3px 3px whitesmoke;
+    margin-left:30px;
+}
+div{
+    display:flex;
+    flex-direction:column;
+    margin-left:3%;
+    :nth-of-type(2){
+        margin-left:30%;
+    }
+    a{
+        color:gray;
+        :nth-of-type(2){
+            color:${blue};
+            font-size:13px;
+        }
+    }
 }
 `

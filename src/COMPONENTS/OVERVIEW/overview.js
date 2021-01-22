@@ -4,10 +4,15 @@ import {Request} from '../../HOOKS/axios'
 import { useEffect, useState } from 'react'
 
 const CheckList =()=>{
+    const [data, setData] = useState({
+        number : "",
+        date : "",
+        name : ""
+    });
     useEffect(()=>{ 
-       Request("GET","clients",{},"공장 리스트 반환").then((res)=>{
-           console.log(res);
-       })
+        Request("GET", "/overview/checksheet",{},{"Authorization": "Bearer " + window.localStorage.getItem("token"), "Content-Type": "application/json"} , "가장 최근에 작성된 점검표")
+        .then((e)=>{
+        })
     })
     return(
         <>
@@ -57,6 +62,24 @@ const Change =()=>{
     )
 }
 
+const Mmeber =()=>{
+    return(
+        <>
+        <s.MemberBox>
+            <img src={프로필} alt=""/>
+            <div>
+                <a>정지원</a>
+                <a>MEMBER NAME</a>
+            </div>
+            <div>
+                <a>01028172423</a>
+                <a>MEMBER PHONE NUMBER</a>
+            </div>
+        </s.MemberBox>
+        </>
+    )
+}
+
 const Overview =()=>{
     return(
         <>
@@ -83,6 +106,12 @@ const Overview =()=>{
                     <Change></Change>
                     <Change></Change>
                 </s.ChangeContainer>
+                <s.DetailBar style={{marginTop:"50px"}}>
+                    <a><i className="far fa-chart-bar"></i> 작업이 가장 임박한 직원</a>
+                </s.DetailBar>
+                <Mmeber></Mmeber>
+                <Mmeber></Mmeber>
+                <Mmeber></Mmeber>
             </s.ShowBox>
         </s.Container>
         </>
