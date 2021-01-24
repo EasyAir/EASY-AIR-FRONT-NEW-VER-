@@ -124,3 +124,17 @@ font-size:20px;
     color:black;
 }
 `
+
+export const AddFactoryButton = styled.button`
+width:100px;
+height:34px;
+position:fixed;
+right:0;
+margin-top:700px;
+margin-right:100px;
+background-color:transparent;
+color:${blue};
+border:1px solid ${blue};
+font-size:14px;
+cursor: pointer;
+`
