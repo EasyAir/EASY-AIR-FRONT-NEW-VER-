@@ -40,9 +40,7 @@ const KakaoLogin = () => { // 카카오 로그인 구현
                       console.log(token);
                       window.localStorage.setItem("token", token)
                       window.localStorage.setItem("team", team)
-                      console.log(window.localStorage.getItem("token"))
-                      window.location.href = window.location.href + "overview";   
-
+                      window.location.href = window.location.href + "overview"; 
                     }).catch((err)=>{
                       console.log('토큰 에러')
                       console.log(err);
