@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {minWid,color} from '../../PUBLIC/index'
+import {minWid,color, blue,BackColor} from '../../PUBLIC/index'
 
 export const Line = styled.div`
 width:100%;
@@ -12,14 +12,16 @@ width:100%;
 display:flex;
 flex-direction:column;
 align-items:center;
+background-color:${BackColor};
 `
 
 export const Sheet = styled.div`
-width:700px;
+width:98%;
 height:130px;
 border:1px solid #818181;
 margin-top:50px;
 box-shadow:4px 4px 10px rgb(30,30,30,0.1);
+background-color:white;
 `
 
 export const SheetHeader = styled.div`
@@ -41,13 +43,15 @@ margin-top:20px;
 align-items:center;
 p{
     font-weight:bold;
-    font-size:20px;
+    font-size:18px;
     cursor:pointer;
+    :hover{
+        opacity:0.5;
+    }
 }
 a{
-    color:#3B4FFF;
-    cursor:pointer;
-    font-weight:bold;
+    color:gray;
+    font-size:13px;
 }
 `
 
@@ -56,7 +60,20 @@ color:#7D7D7D;
 display:flex;
 justify-content:space-between;
 padding: 0 20px;    
-margin-top:10px;
+margin-top:12px;
+p{
+    font-size:16px;
+    color:gray;
+    cursor:pointer;
+    :hover{
+        text-decoration:underline;
+    }
+}
+a{
+    color:${blue};
+    font-weight:bold;
+    font-size:17px;
+}
 `
 
 export const ChangeMenu = styled.ul`
@@ -89,4 +106,8 @@ export const Date = styled.p`
 color:gray;
 font-size:13px;
 margin-top:10px;
+`
+
+export const FlexCont = styled.div`
+width:50%;
 `
