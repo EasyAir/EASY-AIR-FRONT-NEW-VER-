@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {color, blue, minWid} from '../../PUBLIC/index'
+import { blue, minWid} from '../../PUBLIC/index'
 
 export const Line = styled.div`
 width:100%;
@@ -20,25 +20,25 @@ margin-left:10%;
 margin-top:3%;
 display:flex;
 flex-direction:column;
-align-items:center;
 `
 
 export const Name = styled.p`
-font-weight:700;
-font-size:22px;
+font-weight:600;
+font-size:20px;
 margin-top:30px;
+margin-left:20px;
 `
 
 export const Intro = styled.p`
 font-size:15px;
 color:${blue};
 margin-top:10px;
-font-weight:bold;
+margin-left:20px;
 `
 
 export const ProfileImg = styled.img`
-width:230px;
-height:230px;
+width:260px;
+height:260px;
 border-radius:80%;
 overflow:hidden;
 box-shadow:2px 3px 6px whitesmoke;
@@ -46,15 +46,26 @@ margin-top:50px;
 `
 
 export const TeamButton = styled.button`
-width:200px;
-height:30px;
+width:220px;
+height:35px;
 border:none;
-color:black;
-border-radius:24px;
-margin-top:60px;
-background-color:white;
+color:gray;
+border-radius:3px;
+margin-top:20px;
+background-color:rgb(250,250,250);
 cursor: pointer;
-border:1px solid gray;
+border:1px solid #D1D1D1;
+margin-left:20px;
+`
+
+export const TeamDetail = styled.div`
+width:220px;
+margin-left:20px;
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+font-size:13px; 
+color:#9B9B9B;
 `
 
 export const ShowBox = styled.div`
@@ -66,7 +77,7 @@ margin-left:70px;
 padding-top:2%;
 overflow-x:hidden;
      ::-webkit-scrollbar{
-        width:10px;
+        width:5px;
         background-color:rgb(240,240,240);
     } 
     ::-webkit-scrollbar-thumb{
