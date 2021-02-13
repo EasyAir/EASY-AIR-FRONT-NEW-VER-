@@ -1,21 +1,21 @@
 import * as s from './styles'
+import {Link} from 'react-router-dom'
 
 const Header =()=>{
     return(
         <>
-        <s.HeaderContainer>
-            <s.Logo><b><i className="fas fa-cubes"></i></b> <b>E</b>asy<b>A</b>ir</s.Logo>
+        <s.HeaderContainer> 
+            <s.Logo><Link to="/overview" style={{color:"white"}}><b><i className="fas fa-cubes"></i></b> <b>E</b>asy<b>A</b>ir</Link></s.Logo>
             <s.Menu>
-                <li>공장관리</li>
-                <li>직원관리</li>
-                <li>점검필요</li>
-                <li>팀관리</li>
+                <li><Link style={{color:"white"}} to="/factory">공장관리</Link></li>
+                <li><Link style={{color:"white"}} to="/member">직원관리</Link></li>
+                <li><Link style={{color:"white"}} to="/check">업무상태  </Link></li>
+                <li><Link style={{color:"white"}} to="/teammanage">팀관리</Link></li>
             </s.Menu>
             <s.MyMenu>
-                <button><i className="fas fa-sign-out-alt"></i> {/* 로그아웃 */}</button>
+                <Link to="/"><button>로그아웃</button></Link>
             </s.MyMenu>
         </s.HeaderContainer>
-{/*         <s.UnderHeader></s.UnderHeader> */}
         </>
     )
 }
