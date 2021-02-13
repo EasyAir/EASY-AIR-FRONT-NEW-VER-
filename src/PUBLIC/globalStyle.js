@@ -5,6 +5,9 @@ const GlobalStyle = createGlobalStyle`
     ${reset};
     a{
         text-decoration:none;
+        font-family:나눔스퀘어;
+    }
+    p{
         font-family:Arial, Helvetica, sans-serif;
     }
     button{
