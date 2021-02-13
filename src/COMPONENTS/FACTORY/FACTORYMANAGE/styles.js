@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import {blue} from '../../../PUBLIC/index'
+import {blue,minWid} from '../../../PUBLIC/index'
 
 export const Line = styled.div`
 width:100%;
 border-top:1px solid rgb(200,200,200);
 margin-top:4%;
-min-width:1900px;
+min-width:${minWid};
 `
 
 export const Container = styled.div`
@@ -19,7 +19,7 @@ justify-content:center;
 align-items:center;
 flex-direction: column;
 padding:50px 0;
-min-width:1900px;
+min-width:${minWid};
 `
 
 export const ListTitle = styled.div`
@@ -39,6 +39,11 @@ overflow:hidden;
 display:flex;
 flex-direction:column;
 margin-top:60px;
+background-color:white;
+cursor:pointer;
+:hover{
+    box-shadow:0px 3px 6px skyblue;
+}
 :first-child{
     margin-top:10px;
 }
@@ -90,6 +95,10 @@ a{
 export const Location = styled.a`
 font-size:14px;
 color:${blue};
+cursor: pointer;
+:hover{
+    opacity:0.5;
+}
 `
 export const RepName = styled.a`
 color:black;
