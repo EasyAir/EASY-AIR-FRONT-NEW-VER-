@@ -28,9 +28,9 @@ const KakaoLogin = () => { // 카카오 로그인 구현
                         "Content-Type": "application/json"
                       },
                       data:{
-                        "api_key" : "dsfsdfsdf",
-                        "email" : response.kakao_account.email,
-                        "name" : response.properties.nickname 
+                        "api_key" : "easyair",
+                        "name" : response.properties.nickname ,
+                        "email" : response.kakao_account.email
                       }
                     }).then((res)=>{
                       console.log('토큰 보여주기')
@@ -39,8 +39,13 @@ const KakaoLogin = () => { // 카카오 로그인 구현
                       team = res.data.team_id;
                       console.log(token);
                       window.localStorage.setItem("token", token)
-                      window.localStorage.setItem("team", team)
-                      window.location.href = window.location.href + "overview"; 
+                      window.localStorage.setItem("team", 1)
+                      if(team != "undefined"){
+                        window.location.href = window.location.href + "overview"; 
+                      }
+                      else{
+                        window.location.href = window.location.href + "team"; 
+                      }
                     }).catch((err)=>{
                       console.log('토큰 에러')
                       console.log(err);

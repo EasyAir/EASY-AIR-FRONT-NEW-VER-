@@ -15,7 +15,7 @@ position:absolute;
 z-index:200;
 `
 
-export const Title = styled.a`
+export const Title = styled.b`
 font-size:4.4vmin;
 color:black;
 font-weight:bold;
@@ -24,11 +24,11 @@ b{
 }
 `
 
-export const SubTitle = styled.a`
+export const SubTitle = styled.b`
 font-size:1.4vmin;
 color:black;
 font-weight:bold;
-margin-top:16px;
+margin-top:20px;
 `
 
 export const KakaoBox = styled.div`
