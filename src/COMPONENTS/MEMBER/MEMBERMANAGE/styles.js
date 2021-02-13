@@ -16,10 +16,15 @@ align-items:center;
 flex-direction:column;
 `
 
+export const Wrapper = styled.div`
+width:1200px;
+`
+
 export const MemberContainer = styled.div`
 background-color:white;
-width:1100px;
+width:98%;
 height:90px;
+margin-left:1%;
 border-radius:10px;
 border:1px solid #D1D1D1;
 box-shadow:2px 3px 5px rgb(50,50,50,0.1);
@@ -43,6 +48,7 @@ margin-left:15px;
 `
 
 export const Detail = styled.a`
+width:300px;
 font-size:14px;
 color:black;
 margin-left:220px;
@@ -51,13 +57,13 @@ color:gray;
 `
 
 export const DeleteButton = styled.button`
-width:80px;
+width:8%;
 height:30px;
 border:1px solid tomato;
 background-color:transparent;
-position:absolute;
-margin-left:900px;
 color:tomato;
+margin-left:23%;
+font-size:1.3vmin;
 :hover{
     background-color:tomato;
     color:white;
