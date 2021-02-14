@@ -50,3 +50,60 @@ color:white;
 font-size:18px;
 font-weight:bold;
 `
+
+export const TeamName = styled.p`
+font-size:40px;
+font-weight:bold;
+color:black;
+`
+
+export const TeamCode = styled.p`
+color:gray;
+font-size:20px;
+padding:20px 0;
+`
+
+export const DetailMenu = styled.div`
+width:800px;
+height:250px;
+margin-top:30px;
+display:flex;
+`
+
+export const DCnt = styled.div`
+width:33%;
+height:100%;
+border-right:3px solid #BFBFBF;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+:last-child{border:none;}
+`
+
+export const DetailTitle = styled.a`
+color:#CFCFCF;
+font-size:25px;
+font-weight:bold;
+`
+
+export const Cnt = styled.b`
+font-size:50px;
+padding:30px 0;
+color:black;
+font-weight:bold;
+font-family:나눔스퀘어;
+`
+
+export const ReplaceBtn = styled.button`
+width:180px;
+height:50px;
+margin-top:60px;
+background-color:transparent;
+border:1px solid black;
+font-size:17px;
+:hover{
+    background-color:black;
+    color:white;    
+}
+`
