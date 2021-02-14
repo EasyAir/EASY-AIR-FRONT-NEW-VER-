@@ -39,7 +39,7 @@ const KakaoLogin = () => { // 카카오 로그인 구현
                       team = res.data.team_id;
                       console.log(token);
                       window.localStorage.setItem("token", token)
-                      window.localStorage.setItem("team", 1)
+                      window.localStorage.setItem("team", team)
                       if(team != "undefined"){
                         window.location.href = window.location.href + "overview"; 
                       }
