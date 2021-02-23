@@ -7,8 +7,8 @@ const Modal =()=>{
     const {modalName, contextDispatch} = useContext(Context);
     return(
         <>
-        {(modalName == "none")?<></>
-        :(modalName == "writer")?<s.Cover 
+        {(modalName === "none")?<></>
+        :(modalName === "writer")?<s.Cover 
             onClick={()=>contextDispatch({type:"change",value:"none"})}
         ><MemberModal></MemberModal></s.Cover>
         :<></>}

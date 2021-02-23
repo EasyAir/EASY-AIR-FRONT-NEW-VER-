@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {minWid,color, blue,BackColor} from '../../PUBLIC/index'
+import {minWid,blue,BackColor} from '../../PUBLIC/index'
 
 export const Line = styled.div`
 width:100%;

@@ -3,7 +3,7 @@ import 카카오 from '../../IMG/카카오.png'
 import KakaoLogin from './kakao'
 import 배경 from '../../IMG/배경.png'
 import Loading from '../../PUBLIC/loading'
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 
 const Login =()=>{
     const [toggle,setToggle] = useState(false);

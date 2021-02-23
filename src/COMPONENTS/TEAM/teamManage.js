@@ -4,7 +4,7 @@ import * as s from './styles'
 
 const TeamManage=()=>{
     useEffect(()=>{
-        Request("get","team",{},{"Authorization": "Bearer "+window.localStorage.getItem("token"), "Content-Type": "application/json"},"팀 상세정보")
+        Request("get","team",{},{"Authorization": "Bearer "+ window.localStorage.getItem("token"), "Content-Type": "application/json"},"팀 상세정보")
     })
     return(
         <>

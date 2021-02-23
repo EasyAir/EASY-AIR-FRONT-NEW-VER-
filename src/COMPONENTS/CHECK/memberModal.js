@@ -10,8 +10,8 @@ export default function MemberModal(){
                     <img src={프로필} alt="" />
                     <s.MProfileIntro>
                         <p>정지원<b>TEAM 지원공장</b></p>
-                        <a>email : jidole041241@navr.com</a>
-                        <a>phone : 010 2813 2732</a>
+                        <a href="#!">email : jidole041241@navr.com</a>
+                        <a href="#!">phone : 010 2813 2732</a>
                     </s.MProfileIntro>
                 </s.MMain>
             </s.MModalContainer>

@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import {color, blue} from '../../../PUBLIC/index'
+import {color, blue, minWid} from '../../../PUBLIC/index'
 
 export const Line = styled.div`
 width:100%;
 border-top:1px solid rgb(200,200,200);
 margin-top:4%;
-min-width:1900px;
+min-width:${minWid};
 position:absolute;
 `
 

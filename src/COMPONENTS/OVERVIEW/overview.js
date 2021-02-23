@@ -4,24 +4,6 @@ import ReplaceSheet from '../CHECK/replaceSheet'
 import CheckSheet from '../CHECK/checkSheet'
 import MemberList from '../MEMBER/MEMBERMANAGE/member'
 
-const Mmeber =()=>{
-    return(
-        <>
-        <s.MemberBox>
-            <img src={프로필} alt=""/>
-            <div>
-                <a>정지원</a>
-                <a>MEMBER NAME</a>
-            </div>
-            <div>
-                <a>01028172423</a>
-                <a>MEMBER PHONE NUMBER</a>
-            </div>
-        </s.MemberBox>
-        </>
-    )
-}
-
 const Overview =()=>{
     return(
         <>
@@ -39,7 +21,7 @@ const Overview =()=>{
                 </s.ProfileBox>
                 <s.ShowBox>
                     <s.DetailBar>
-                        <a><i className="far fa-chart-bar"></i> 최근에 작성한 교체표</a>
+                        <a href="#!"><i className="far fa-chart-bar"></i> 최근에 작성한 교체표</a>
                     </s.DetailBar>
                     <s.FlexContainer>
                         <ReplaceSheet></ReplaceSheet>
@@ -47,7 +29,7 @@ const Overview =()=>{
                         <ReplaceSheet></ReplaceSheet>
                     </s.FlexContainer>
                     <s.DetailBar>
-                        <a><i className="far fa-chart-bar"></i> 최근에 작성한 점검표</a>
+                        <a href="#!"><i className="far fa-chart-bar"></i> 최근에 작성한 점검표</a>
                     </s.DetailBar>
                     <s.FlexContainer>
                         <CheckSheet></CheckSheet>
@@ -55,7 +37,7 @@ const Overview =()=>{
                         <CheckSheet></CheckSheet>
                     </s.FlexContainer>
                     <s.DetailBar>
-                        <a><i className="far fa-chart-bar"></i> 작업이 가장 임박한 직원</a>
+                        <a href="#!"><i className="far fa-chart-bar"></i> 작업이 가장 임박한 직원</a>
                     </s.DetailBar>
                     <MemberList></MemberList>
                     <MemberList></MemberList>

@@ -16,18 +16,19 @@ margin-bottom:100px;
 border-radius:7px 7px 0 0 ;
 overflow:hidden;
 td,th{
-    padding:25px 45px;
+    padding:20px 45px;
 }
 tr {
     background-color:#F1F1F1;
-    color:gray;
+    color:black;
+    font-family:나눔스퀘어;
     :nth-of-type(1){
         background-color:#3A3B46;
         font-size:15px;
         color:white;
     }
     :nth-of-type(2n){
-        background-color:#FBFBFB;
+        background-color:rgb(250,250,250);
     }
 }
 `

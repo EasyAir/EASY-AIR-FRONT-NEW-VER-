@@ -9,12 +9,12 @@ const FactoryList = ({ name, location, phone, rep, pro, id }) => {
         if (window.confirm(name + " 을(를) 삭제하시겠습니까?"))
             Request("DELETE", "client/" + id, {}, { "Authorization": "Bearer " + window.localStorage.getItem("token") }, "공장삭제")
         setTimeout(() => {
-            window.location.href = window.location.href;
+            window.location.href = "/";
         }, 1000)
     }
     return (
         <>
-        <Link to={`factory/${id}`}>
+        <s.LinkStyle to={`factory/${id}`}>
             <s.FactoryBox>
                 <s.IconBox>
                     <Link to="/factory"><s.Icon onClick={FDelete}><i className="fas fa-trash-alt"></i></s.Icon></Link>
@@ -32,7 +32,7 @@ const FactoryList = ({ name, location, phone, rep, pro, id }) => {
                     </s.DetainInfor>
                 </s.FlexBox>
             </s.FactoryBox>
-            </Link>
+            </s.LinkStyle>
         </>
     )
 }

@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 import {blue,minWid} from '../../../PUBLIC/index'
+import {Link} from 'react-router-dom'
+
+export const LinkStyle = styled(Link)`
+margin-top:60px;
+:nth-of-type(1){
+    margin-top:0;
+}
+:nth-of-type(2){
+    margin-top:0;
+}
+`
 
 export const Line = styled.div`
 width:100%;
@@ -42,7 +53,7 @@ margin-top:60px;
 background-color:white;
 cursor:pointer;
 :hover{
-    box-shadow:0px 3px 6px skyblue;
+    box-shadow:3px 3px 18px skyblue;
 }
 :first-child{
     margin-top:10px;

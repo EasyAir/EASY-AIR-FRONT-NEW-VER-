@@ -5,7 +5,7 @@ const MemberList=({img,name,phone,email,id})=>{
     const DeleteMember=()=>{
         if(window.confirm(name + "을(를) 내보내시겠습니까?")){
             Request("DELETE","/server/" + id,{},{"Authorization": "Bearer " + window.localStorage.getItem("token")},"직원삭제")
-            window.location.href = window.location.href;
+            window.location.href = "/";
         }
     }
     return(

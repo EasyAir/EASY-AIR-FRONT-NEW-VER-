@@ -22,7 +22,6 @@ const MemberManage = () => {
             <s.Line></s.Line>
             <s.Container>
                 <s.Wrapper>
-                    <MemberList></MemberList>
                     {Menu}
                 </s.Wrapper>
             </s.Container>
