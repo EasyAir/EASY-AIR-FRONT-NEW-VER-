@@ -45,7 +45,7 @@ const TeamManage=()=>{
             </s.DetailMenu>
             <s.ReplaceBtn
                 onClick={()=>{
-                    Request("post","code",{},{"Authorization": "Bearer "+window.localStorage.getItem("token")},"팀 코드 변경")
+                    Request("post","code",{},{"Authorization": "Bearer "+ window.localStorage.getItem("token")},"팀 코드 변경")
                     window.location.href = "/teammanage"
                 }}
             >팀 코드 변경</s.ReplaceBtn>
